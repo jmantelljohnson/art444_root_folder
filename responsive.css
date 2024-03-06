@@ -4,9 +4,8 @@ body {
     font-size:80%;
     font-family: sans-serif;
     color: blue;
+  }
 }
-}
-
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {

@@ -1,38 +1,96 @@
 /* CSS GOES HERE */
 
+.row {
+  /* Flex Box */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    position: relative;
+    width: 755px;
+    height: 461px;
+
+
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 section {
-    padding: 60px 40px;
+  padding: 60px 40px;
+}
+
+section#about {
+  background-color: coral;
 }
 
 section:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .container {
-    width: 100%;
-    max-width: 960px;
-    text-align: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  text-align: left;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  padding: 30px 10px;
+  transition-duration: 500ms;
+  transition-delay: 1s;
+}
+
+.container:active {
+  background-color: sienna;
+}
+
+div.row p {
+  font-family: sans-serif;
+}
+
+div.row p:first-child {
+  font-family: Georgia;
+  font-size: 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 10px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+h2 {
+  color: blue;
+  font-size: 48px;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+h2.different {
+  color: brown;
+  font-size: 60px;
+  margin-top: 0px;
+  animation-name: spinning-title;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spinning-title {
+
+  0% { transform: rotate(0deg); opacity: 0; margin-bottom: 0px; }
+  100% { transform: rotate(360deg); opacity: 1; margin-bottom: 100px; }
 }

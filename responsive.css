@@ -1,6 +1,10 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
-
+body {
+    font-size:80%;
+    font-family: sans-serif;
+    color: blue;
+  }
 }
 
 /* MOBILE VIEW */
